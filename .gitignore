@@ -1,2 +1,6 @@
 /notes.php
 *.zip
+composer-bianca.json
+*.lock
+vendor/**
+\hcodebr
