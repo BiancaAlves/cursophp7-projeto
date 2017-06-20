@@ -2,8 +2,11 @@
 //Require do composer
 require_once("vendor/autoload.php");
 
+use \Slim\Slim;
+use \Hcode\Page;
+
 //Instanciando a classe Slim
-$app = new \Slim\Slim();
+$app = new Slim();
 
 //Slim: Configurando para que sejam mostrados todas as mensagens de erro
 $app->config('debug', true);
@@ -11,11 +14,9 @@ $app->config('debug', true);
 //Slim: Criando conteúdo para o caminho "/"
 $app->get('/', function() {
 
-	$sql = new Hcode\DB\Sql();
+	$page = new Page();
 
-	$results = $sql->select("SELECT * FROM tb_users");
-
-	echo json_encode($results);
+	$page->setTpl("index");	
 
 });
 
