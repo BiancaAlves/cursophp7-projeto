@@ -1,3 +1,3 @@
-Curso PHP7 - Projeto final
+# Curso PHP7 - Projeto final
 
-Esse projeto contém um mecanismo de login e senha e um CRUD - necessário em qualquer projeto.
+Esse projeto contém um mecanismo de login e senha e um CRUD.
