@@ -5,3 +5,4 @@ composer-bianca.json
 vendor/**
 \hcodebr
 res/admin
+/views-cache
