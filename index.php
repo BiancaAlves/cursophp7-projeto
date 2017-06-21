@@ -4,6 +4,7 @@ require_once("vendor/autoload.php");
 
 use \Slim\Slim;
 use \Hcode\Page;
+use \Hcode\PageAdmin;
 
 //Instanciando a classe Slim
 $app = new Slim();
@@ -20,7 +21,16 @@ $app->get('/', function() {
 
 });
 
+//Slim: Criando conteúdo para o caminho "/admin"
+$app->get('/admin', function() {
+
+	$page = new PageAdmin();
+
+	$page->setTpl("index");
+
+});
+
 //Rodando o Slim
 $app->run();
 
- ?>
+?>

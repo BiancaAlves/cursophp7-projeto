@@ -1,6 +1,7 @@
-/notes.php
+/notes.txt
 *.zip
 composer-bianca.json
 *.lock
 vendor/**
 \hcodebr
+res/admin
